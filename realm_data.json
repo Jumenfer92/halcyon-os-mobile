@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "osName": "Halcyon OS",
+  "gameName": "The Realm",
+  "elements": [
+    { "id": "fuego",  "name": "Fuego",  "color": "#e8643c" },
+    { "id": "agua",   "name": "Agua",   "color": "#3c9be8" },
+    { "id": "tierra", "name": "Tierra", "color": "#b08a4a" },
+    { "id": "viento", "name": "Viento", "color": "#6fd3a8" },
+    { "id": "rayo",   "name": "Rayo",   "color": "#e8d23c" },
+    { "id": "sombra", "name": "Sombra", "color": "#9a7be0" }
+  ],
+  "times": ["Amanecer", "Mediodía", "Atardecer", "Noche"],
+  "biomes": [
+    { "id": "pradera", "name": "Pradera",  "desc": "Hierba alta que ondula hasta el horizonte. Se oyen campanas lejanas.", "music": ["Pastoral en Re", "Viento sobre la hierba"] },
+    { "id": "bosque",  "name": "Bosque",   "desc": "Árboles de corteza pálida y luz que cae en columnas.", "music": ["Musgo y lluvia", "Canon del bosque"] },
+    { "id": "desierto","name": "Desierto", "desc": "Dunas que cambian de forma cuando nadie mira.", "music": ["Arena y cobre", "Espejismo lento"] },
+    { "id": "nieve",   "name": "Nevero",   "desc": "Un campo blanco sin huellas. El cielo y el suelo se confunden.", "music": ["Cristal frío", "Aliento blanco"] },
+    { "id": "pantano", "name": "Ciénaga",  "desc": "Agua quieta, raíces retorcidas y luces que no deberían estar ahí.", "music": ["Niebla verde", "Croar lejano"] },
+    { "id": "ruinas",  "name": "Ruinas",   "desc": "Columnas partidas de una ciudad que nadie recuerda haber diseñado.", "music": ["Coro sin voces", "Piedra dormida"] }
+  ],
+  "dungeons": [
+    { "id": "cueva",     "name": "Cueva",     "floorsMin": 2, "floorsMax": 3, "treasures": ["Poción mayor", "Mapa de la cueva", "Brazal de cobre"] },
+    { "id": "templo",    "name": "Templo",    "floorsMin": 3, "floorsMax": 4, "treasures": ["Pergamino de luz", "Báculo de sauce", "Anillo votivo"] },
+    { "id": "fortaleza", "name": "Fortaleza", "floorsMin": 3, "floorsMax": 5, "treasures": ["Espada dentada", "Yelmo de hierro", "Escudo de torre"] },
+    { "id": "catedral",  "name": "Catedral",  "floorsMin": 4, "floorsMax": 5, "treasures": ["Campana de cristal rota"] }
+  ],
+  "servers": [
+    { "id": "delta",  "symbol": "Δ", "name": "Vella Mar",    "town": "Ciudad de los canales",      "levelBase": 0,  "startUnlocked": true },
+    { "id": "theta",  "symbol": "Θ", "name": "Dun Arren",    "town": "Ciudad de las torres",       "levelBase": 12, "startUnlocked": false },
+    { "id": "lambda", "symbol": "Λ", "name": "Carcasa Alta", "town": "Ciudad de la nieve eterna",  "levelBase": 25, "startUnlocked": false },
+    { "id": "sigma",  "symbol": "Σ", "name": "Fuerte Velo",  "town": "Ciudad de los mercaderes",   "levelBase": 35, "startUnlocked": false }
+  ],
+  "wordsA": [
+    { "id": "a_ardiente",   "text": "Ardiente",   "element": "fuego",  "level": 1,  "startUnlocked": true },
+    { "id": "a_abisal",     "text": "Abisal",     "element": "agua",   "level": 3,  "startUnlocked": true },
+    { "id": "a_mineral",    "text": "Mineral",    "element": "tierra", "level": 2,  "startUnlocked": true },
+    { "id": "a_errante",    "text": "Errante",    "element": "",       "level": 1,  "startUnlocked": true },
+    { "id": "a_celeste",    "text": "Celeste",    "element": "viento", "level": 4,  "startUnlocked": false },
+    { "id": "a_fulgurante", "text": "Fulgurante", "element": "rayo",   "level": 6,  "startUnlocked": false },
+    { "id": "a_silente",    "text": "Silente",    "element": "sombra", "level": 8,  "startUnlocked": false }
+  ],
+  "wordsB": [
+    { "id": "b_apacible",   "text": "Apacible",   "dungeon": "cueva",     "weathers": ["Despejado", "Brisa suave"],       "level": 0, "startUnlocked": true },
+    { "id": "b_feroz",      "text": "Feroz",      "dungeon": "fortaleza", "weathers": ["Tormenta", "Vendaval"],           "level": 4, "startUnlocked": true },
+    { "id": "b_sublime",    "text": "Sublime",    "dungeon": "templo",    "weathers": ["Niebla", "Despejado", "Aurora"],  "level": 3, "startUnlocked": false },
+    { "id": "b_hostil",     "text": "Hostil",     "dungeon": "fortaleza", "weathers": ["Lluvia", "Tormenta"],             "level": 6, "startUnlocked": false },
+    { "id": "b_inmemorial", "text": "Inmemorial", "dungeon": "catedral",  "weathers": ["Ceniza", "Silencio"],             "level": 7, "startUnlocked": false }
+  ],
+  "wordsC": [
+    { "id": "c_pradera",    "text": "Pradera",    "biome": "pradera",  "level": 0, "startUnlocked": true },
+    { "id": "c_bosque",     "text": "Bosque",     "biome": "bosque",   "level": 1, "startUnlocked": true },
+    { "id": "c_duna",       "text": "Duna",       "biome": "desierto", "level": 3, "startUnlocked": true },
+    { "id": "c_glaciar",    "text": "Glaciar",    "biome": "nieve",    "level": 5, "startUnlocked": false },
+    { "id": "c_cienaga",    "text": "Ciénaga",    "biome": "pantano",  "level": 4, "startUnlocked": false },
+    { "id": "c_campanario", "text": "Campanario", "biome": "ruinas",   "level": 9, "startUnlocked": false }
+  ],
+  "monsters": [
+    { "id": "m_duende",    "name": "Duende de musgo",     "elements": ["*"],               "biomes": ["pradera", "bosque"] },
+    { "id": "m_conejo",    "name": "Conejo cornudo",      "elements": ["*"],               "biomes": ["pradera", "nieve"] },
+    { "id": "m_slime",     "name": "Gelatina errante",    "elements": ["*"],               "biomes": ["*"] },
+    { "id": "m_murcielago","name": "Murciélago de vidrio","elements": ["*"],               "biomes": ["*"] },
+    { "id": "m_lagarto",   "name": "Lagarto de brasas",   "elements": ["fuego"],           "biomes": ["*"] },
+    { "id": "m_polilla",   "name": "Polilla de ceniza",   "elements": ["fuego", "sombra"], "biomes": ["*"] },
+    { "id": "m_medusa",    "name": "Medusa de cristal",   "elements": ["agua"],            "biomes": ["*"] },
+    { "id": "m_sapo",      "name": "Sapo de lodo",        "elements": ["agua", "tierra"],  "biomes": ["pantano", "bosque"] },
+    { "id": "m_golem",     "name": "Gólem de arcilla",    "elements": ["tierra"],          "biomes": ["*"] },
+    { "id": "m_escarabajo","name": "Escarabajo de arena", "elements": ["tierra", "*"],     "biomes": ["desierto"] },
+    { "id": "m_serpiente", "name": "Serpiente de nube",   "elements": ["viento"],          "biomes": ["*"] },
+    { "id": "m_arpia",     "name": "Arpía de plumas grises","elements": ["viento", "rayo"],"biomes": ["*"] },
+    { "id": "m_lobo",      "name": "Lobo de escarcha",    "elements": ["agua", "viento"],  "biomes": ["nieve"] },
+    { "id": "m_centella",  "name": "Centella viva",       "elements": ["rayo"],            "biomes": ["*"] },
+    { "id": "m_caballero", "name": "Caballero hueco",     "elements": ["sombra", "*"],     "biomes": ["ruinas"] },
+    { "id": "m_espectro",  "name": "Espectro de la campana","elements": ["sombra"],        "biomes": ["ruinas"] },
+    { "id": "m_gargola",   "name": "Gárgola sin nombre",  "elements": ["sombra", "tierra"],"biomes": ["*"] }
+  ],
+  "specialAreas": [
+    {
+      "key": "delta|a_silente|b_inmemorial|c_campanario",
+      "name": "Δ Silente Inmemorial Campanario",
+      "level": -1,
+      "corrupted": true,
+      "description": "La señal se degrada al entrar. Una catedral sin techo, campanas sin badajo y una figura de espaldas que no aparece en la lista de jugadores.",
+      "treasure": "Campana de cristal rota"
+    }
+  ],
+  "mails": [
+    { "id": "m01", "from": "Soporte de The Realm", "address": "soporte@therealm.lumen", "subject": "Bienvenido a The Realm",
+      "body": "Gracias por registrarte.\n\nPara viajar a un área, abre la Puerta, elige un servidor y combina tres palabras clave. La misma combinación siempre lleva al mismo lugar.\n\nPalabras iniciales concedidas:\nArdiente, Abisal, Mineral, Errante\nApacible, Feroz\nPradera, Bosque, Duna\n\nLas palabras nuevas se aprenden hablando con otros jugadores, leyendo el foro y explorando.\n\nEquipo de Lumen Interactive" },
+    { "id": "m02", "from": "Orbe", "address": "orbe.k@nube.net", "subject": "¡Por fin estás dentro!",
+      "body": "¡Ya era hora!\n\nEmpieza por algo fácil: Δ Ardiente Apacible Pradera. Es nivel bajísimo, perfecto para aprender a moverte.\n\nCuando termines te paso un par de palabras que conseguí ayer. Algunas áreas solo aparecen si las conoces.\n\nOrbe" },
+    { "id": "m03", "from": "Orbe", "address": "orbe.k@nube.net", "subject": "Palabras nuevas",
+      "body": "¿Qué tal la primera mazmorra? La estatua del fondo siempre da algo.\n\nTe paso dos palabras: Sublime y Glaciar. Con Sublime salen templos, con Glaciar salen campos nevados.\n\nPor cierto, mira el foro. Hay un hilo muy raro sobre una campana. Seguro que es una broma de alguien aburrido.\n\nOrbe" },
+    { "id": "m04", "from": "Orbe", "address": "orbe.k@nube.net", "subject": "La he oído",
+      "body": "Sé que vas a pensar que estoy de broma.\n\nAnoche, en Δ, oí una campana donde no había ninguna. Seguí el sonido y el mapa se me llenó de cuadros negros. Desconecté.\n\nUn tal Hiraeth me dijo por chat que la palabra es Campanario. No sé de dónde la sacó.\n\nVoy a volver esta noche. Si vienes, nos vemos allí.\n\nOrbe" },
+    { "id": "m05", "from": "", "address": "", "subject": "",
+      "body": "n0 d3b3r1as h4b3r\n\nent r4do\n\nla c a m p a n a\n\nsigue sonando" },
+    { "id": "m06", "from": "Lía", "address": "lia.k@nube.net", "subject": "Soy la hermana de Orbe",
+      "body": "Perdona que te escriba sin conocerte. He visto tu dirección en su lista de amigos.\n\nMi hermano no se despierta. Lo encontramos esta mañana con las gafas puestas y el juego todavía conectado. Los médicos dicen que no tiene nada.\n\n¿Estabas con él anoche? ¿Viste algo?\n\nPor favor, contéstame.\n\nLía" },
+    { "id": "m07", "from": "Hiraeth", "address": "hiraeth@sinservidor", "subject": "No vuelvas sola",
+      "body": "Estuviste en el campanario. Lo sé porque yo también.\n\nNo vuelvas a esa área. Lo que viste no es un jugador ni un PNJ.\n\nHay una segunda campana. Está en Θ. Te he abierto el acceso.\n\nNo se lo cuentes al soporte.\n\nH." }
+  ],
+  "threads": [
+    { "id": "t01", "board": "General", "title": "Hilo de bienvenida para novatos", "startVisible": true,
+      "posts": [
+        { "author": "Moderadora_Nia", "body": "Presentaos aquí. Recordad: las palabras clave se comparten, no se venden." },
+        { "author": "pan_con_tomate", "body": "Hola!! Acabo de empezar con un Espadachín. ¿Alguna área para subir rápido?" },
+        { "author": "Tobías", "body": "Δ Mineral Apacible Bosque. Gólems lentos, mucha experiencia." }
+      ] },
+    { "id": "t02", "board": "Rumores", "title": "¿Alguien más oye una campana en Δ?", "startVisible": false,
+      "posts": [
+        { "author": "lunatico_77", "body": "Tres noches seguidas. En medio de un campo vacío suena una campana. Tres golpes. Luego silencio." },
+        { "author": "Tobías", "body": "Será un efecto de sonido nuevo. Lo habrán metido en el último parche." },
+        { "author": "lunatico_77", "body": "No hubo parche. Y la palabra que me dio el que me lo contó es Silente. No sale en ninguna lista." },
+        { "author": "Moderadora_Nia", "body": "Hilo cerrado por especulación sin pruebas." }
+      ] },
+    { "id": "t03", "board": "Comercio", "title": "Cambio Brazal de cobre por pociones", "startVisible": false,
+      "posts": [
+        { "author": "Merca", "body": "Lo que dice el título. Estoy en Vella Mar, junto al puente de los canales." },
+        { "author": "pan_con_tomate", "body": "Te doy 3 pociones mayores" },
+        { "author": "Merca", "body": "Hecho." }
+      ] },
+    { "id": "t04", "board": "Rumores", "title": "Jugadores que no se desconectan", "startVisible": false,
+      "posts": [
+        { "author": "anon_4412", "body": "Un amigo lleva dos días con el personaje parado en la plaza. Si le hablas no responde. Su madre dice que está en el hospital." },
+        { "author": "Tobías", "body": "Esto no tiene gracia." },
+        { "author": "[mensaje eliminado por un administrador]", "body": "" }
+      ] }
+  ],
+  "news": [
+    { "id": "n01", "date": "11/10", "title": "The Realm supera los 10 millones de jugadores", "startVisible": true,
+      "body": "Lumen Interactive celebra el hito con un evento en los cuatro servidores. El juego se ha convertido en el más jugado del mundo menos de dos años después de su lanzamiento." },
+    { "id": "n02", "date": "12/10", "title": "Apagón parcial en la red de datos de la ciudad", "startVisible": false,
+      "body": "Un fallo de origen desconocido dejó sin conexión varios barrios durante 14 minutos. Los técnicos encontraron en los registros una palabra repetida miles de veces: «inmemorial». Fuentes de la compañía hablan de un error de prueba." },
+    { "id": "n03", "date": "13/10", "title": "Ingresan a varios jóvenes por causas desconocidas", "startVisible": false,
+      "body": "Los hospitales de la región han recibido esta semana a cinco jóvenes inconscientes. Todos estaban usando gafas de realidad virtual. Lumen Interactive asegura que su software es seguro." }
+  ],
+  "triggers": [
+    { "id": "tr_boot", "on": "boot", "actions": [
+      { "type": "sendMail", "id": "m01", "delay": 1 },
+      { "type": "sendMail", "id": "m02", "delay": 4 } ] },
+    { "id": "tr_first_visit", "on": "visit_any", "actions": [
+      { "type": "sendMail", "id": "m03", "delay": 6 },
+      { "type": "unlockThread", "id": "t03", "delay": 0 } ] },
+    { "id": "tr_read_m03", "on": "read_mail:m03", "actions": [
+      { "type": "unlockWord", "id": "b_sublime", "delay": 0 },
+      { "type": "unlockWord", "id": "c_glaciar", "delay": 0 },
+      { "type": "unlockThread", "id": "t02", "delay": 0 } ] },
+    { "id": "tr_read_t02", "on": "read_thread:t02", "actions": [
+      { "type": "unlockWord", "id": "a_silente", "delay": 0 },
+      { "type": "unlockNews", "id": "n02", "delay": 5 },
+      { "type": "sendMail", "id": "m04", "delay": 12 } ] },
+    { "id": "tr_read_n02", "on": "read_news:n02", "actions": [
+      { "type": "unlockWord", "id": "b_inmemorial", "delay": 0 } ] },
+    { "id": "tr_read_m04", "on": "read_mail:m04", "actions": [
+      { "type": "unlockWord", "id": "c_campanario", "delay": 0 } ] },
+    { "id": "tr_campanario", "on": "visit:delta|a_silente|b_inmemorial|c_campanario", "actions": [
+      { "type": "sendMail", "id": "m05", "delay": 3 },
+      { "type": "unlockNews", "id": "n03", "delay": 8 },
+      { "type": "unlockThread", "id": "t04", "delay": 10 },
+      { "type": "sendMail", "id": "m06", "delay": 16 } ] },
+    { "id": "tr_read_m06", "on": "read_mail:m06", "actions": [
+      { "type": "sendMail", "id": "m07", "delay": 10 },
+      { "type": "unlockServer", "id": "theta", "delay": 10 },
+      { "type": "unlockWord", "id": "a_celeste", "delay": 10 },
+      { "type": "unlockWord", "id": "a_fulgurante", "delay": 10 },
+      { "type": "unlockWord", "id": "b_hostil", "delay": 10 },
+      { "type": "unlockWord", "id": "c_cienaga", "delay": 10 } ] }
+  ]
+}

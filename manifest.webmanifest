@@ -1,0 +1,23 @@
+{
+  "name": "Halcyon OS",
+  "short_name": "Halcyon",
+  "description": "Escritorio de The Realm: correo, foro, noticias y la Puerta de palabras clave.",
+  "id": "/",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#04090f",
+  "theme_color": "#0b1622",
+  "lang": "es",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Correo", "url": "/?app=mail", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "The Realm", "url": "/?app=gate", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}
